@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		00B3802A253FF91C009B9003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B38029253FF91C009B9003 /* AppDelegate.swift */; };
 		00B3802C253FF91C009B9003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3802B253FF91C009B9003 /* SceneDelegate.swift */; };
-		00B3802E253FF91C009B9003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3802D253FF91C009B9003 /* ViewController.swift */; };
+		00B3802E253FF91C009B9003 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3802D253FF91C009B9003 /* LocationViewController.swift */; };
 		00B38031253FF91C009B9003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B3802F253FF91C009B9003 /* Main.storyboard */; };
 		00B38033253FF91E009B9003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B38032253FF91E009B9003 /* Assets.xcassets */; };
 		00B38036253FF91E009B9003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B38034253FF91E009B9003 /* LaunchScreen.storyboard */; };
+		00B3804F253FFD91009B9003 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3804E253FFD91009B9003 /* LocationViewModel.swift */; };
+		00B38054253FFDED009B9003 /* AlertHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B38053253FFDED009B9003 /* AlertHandlerProtocol.swift */; };
+		00B38057253FFE21009B9003 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B38056253FFE21009B9003 /* CustomError.swift */; };
+		00B3805A253FFE3D009B9003 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B38059253FFE3D009B9003 /* UIApplication+Ext.swift */; };
+		00B3805D253FFE6B009B9003 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3805C253FFE6B009B9003 /* ServiceManager.swift */; };
+		00B38060253FFE95009B9003 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B3805F253FFE95009B9003 /* LocationHandler.swift */; };
+		00B38063253FFED8009B9003 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B38062253FFED8009B9003 /* Place.swift */; };
+		00B38066253FFF07009B9003 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B38065253FFF07009B9003 /* CustomAnnotation.swift */; };
+		00B3806A2540000B009B9003 /* GeocoderHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B380692540000B009B9003 /* GeocoderHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00B38026253FF91C009B9003 /* Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B38029253FF91C009B9003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B3802B253FF91C009B9003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00B3802D253FF91C009B9003 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00B3802D253FF91C009B9003 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		00B38030253FF91C009B9003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00B38032253FF91E009B9003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00B38035253FF91E009B9003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00B38037253FF91E009B9003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B3804E253FFD91009B9003 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		00B38053253FFDED009B9003 /* AlertHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandlerProtocol.swift; sourceTree = "<group>"; };
+		00B38056253FFE21009B9003 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		00B38059253FFE3D009B9003 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		00B3805C253FFE6B009B9003 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		00B3805F253FFE95009B9003 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		00B38062253FFED8009B9003 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		00B38065253FFF07009B9003 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		00B380692540000B009B9003 /* GeocoderHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +78,6 @@
 				00B38046253FF9E3009B9003 /* Apple Map */,
 				00B3804A253FFA30009B9003 /* Storyboards */,
 				00B3804B253FFA37009B9003 /* Support Files */,
-				00B3802D253FF91C009B9003 /* ViewController.swift */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -81,6 +98,7 @@
 		00B38040253FF976009B9003 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				00B38059253FFE3D009B9003 /* UIApplication+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -88,6 +106,7 @@
 		00B38041253FF980009B9003 /* Alert Handler */ = {
 			isa = PBXGroup;
 			children = (
+				00B38053253FFDED009B9003 /* AlertHandlerProtocol.swift */,
 			);
 			path = "Alert Handler";
 			sourceTree = "<group>";
@@ -95,6 +114,7 @@
 		00B38042253FF98D009B9003 /* Custom Error */ = {
 			isa = PBXGroup;
 			children = (
+				00B38056253FFE21009B9003 /* CustomError.swift */,
 			);
 			path = "Custom Error";
 			sourceTree = "<group>";
@@ -102,6 +122,7 @@
 		00B38043253FF99B009B9003 /* Geocoder Handler */ = {
 			isa = PBXGroup;
 			children = (
+				00B380692540000B009B9003 /* GeocoderHandler.swift */,
 			);
 			path = "Geocoder Handler";
 			sourceTree = "<group>";
@@ -109,6 +130,7 @@
 		00B38044253FF9A7009B9003 /* Location Handler */ = {
 			isa = PBXGroup;
 			children = (
+				00B3805F253FFE95009B9003 /* LocationHandler.swift */,
 			);
 			path = "Location Handler";
 			sourceTree = "<group>";
@@ -116,6 +138,7 @@
 		00B38045253FF9B3009B9003 /* Service Manager */ = {
 			isa = PBXGroup;
 			children = (
+				00B3805C253FFE6B009B9003 /* ServiceManager.swift */,
 			);
 			path = "Service Manager";
 			sourceTree = "<group>";
@@ -133,6 +156,7 @@
 		00B38047253FFA09009B9003 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				00B3804E253FFD91009B9003 /* LocationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -140,6 +164,7 @@
 		00B38048253FFA11009B9003 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				00B3802D253FF91C009B9003 /* LocationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +172,8 @@
 		00B38049253FFA17009B9003 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00B38062253FFED8009B9003 /* Place.swift */,
+				00B38065253FFF07009B9003 /* CustomAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,9 +289,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B3802E253FF91C009B9003 /* ViewController.swift in Sources */,
+				00B3802E253FF91C009B9003 /* LocationViewController.swift in Sources */,
+				00B3804F253FFD91009B9003 /* LocationViewModel.swift in Sources */,
 				00B3802A253FF91C009B9003 /* AppDelegate.swift in Sources */,
+				00B38060253FFE95009B9003 /* LocationHandler.swift in Sources */,
+				00B3805D253FFE6B009B9003 /* ServiceManager.swift in Sources */,
+				00B3805A253FFE3D009B9003 /* UIApplication+Ext.swift in Sources */,
+				00B3806A2540000B009B9003 /* GeocoderHandler.swift in Sources */,
+				00B38066253FFF07009B9003 /* CustomAnnotation.swift in Sources */,
 				00B3802C253FF91C009B9003 /* SceneDelegate.swift in Sources */,
+				00B38054253FFDED009B9003 /* AlertHandlerProtocol.swift in Sources */,
+				00B38057253FFE21009B9003 /* CustomError.swift in Sources */,
+				00B38063253FFED8009B9003 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
