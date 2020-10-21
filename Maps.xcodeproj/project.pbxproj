@@ -56,15 +56,119 @@
 		00B38028253FF91C009B9003 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				00B38029253FF91C009B9003 /* AppDelegate.swift */,
-				00B3802B253FF91C009B9003 /* SceneDelegate.swift */,
+				00B3803F253FF963009B9003 /* Common */,
+				00B38046253FF9E3009B9003 /* Apple Map */,
+				00B3804A253FFA30009B9003 /* Storyboards */,
+				00B3804B253FFA37009B9003 /* Support Files */,
 				00B3802D253FF91C009B9003 /* ViewController.swift */,
-				00B3802F253FF91C009B9003 /* Main.storyboard */,
-				00B38032253FF91E009B9003 /* Assets.xcassets */,
-				00B38034253FF91E009B9003 /* LaunchScreen.storyboard */,
-				00B38037253FF91E009B9003 /* Info.plist */,
 			);
 			path = Maps;
+			sourceTree = "<group>";
+		};
+		00B3803F253FF963009B9003 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				00B38041253FF980009B9003 /* Alert Handler */,
+				00B38042253FF98D009B9003 /* Custom Error */,
+				00B38040253FF976009B9003 /* Extensions */,
+				00B38043253FF99B009B9003 /* Geocoder Handler */,
+				00B38044253FF9A7009B9003 /* Location Handler */,
+				00B38045253FF9B3009B9003 /* Service Manager */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		00B38040253FF976009B9003 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		00B38041253FF980009B9003 /* Alert Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Alert Handler";
+			sourceTree = "<group>";
+		};
+		00B38042253FF98D009B9003 /* Custom Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Error";
+			sourceTree = "<group>";
+		};
+		00B38043253FF99B009B9003 /* Geocoder Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Geocoder Handler";
+			sourceTree = "<group>";
+		};
+		00B38044253FF9A7009B9003 /* Location Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Location Handler";
+			sourceTree = "<group>";
+		};
+		00B38045253FF9B3009B9003 /* Service Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Service Manager";
+			sourceTree = "<group>";
+		};
+		00B38046253FF9E3009B9003 /* Apple Map */ = {
+			isa = PBXGroup;
+			children = (
+				00B38049253FFA17009B9003 /* Model */,
+				00B38048253FFA11009B9003 /* View */,
+				00B38047253FFA09009B9003 /* ViewModel */,
+			);
+			path = "Apple Map";
+			sourceTree = "<group>";
+		};
+		00B38047253FFA09009B9003 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00B38048253FFA11009B9003 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00B38049253FFA17009B9003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00B3804A253FFA30009B9003 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				00B3802F253FF91C009B9003 /* Main.storyboard */,
+				00B38034253FF91E009B9003 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		00B3804B253FFA37009B9003 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00B38032253FF91E009B9003 /* Assets.xcassets */,
+				00B38029253FF91C009B9003 /* AppDelegate.swift */,
+				00B3802B253FF91C009B9003 /* SceneDelegate.swift */,
+				00B38037253FF91E009B9003 /* Info.plist */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +392,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VX327H4378;
-				INFOPLIST_FILE = Maps/Info.plist;
+				INFOPLIST_FILE = "Maps/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +412,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VX327H4378;
-				INFOPLIST_FILE = Maps/Info.plist;
+				INFOPLIST_FILE = "Maps/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
