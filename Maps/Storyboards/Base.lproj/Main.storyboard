@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fiY-Tu-YMo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gDC-Lz-37t">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -22,7 +22,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Bie-Ec-ldR">
-                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -37,7 +37,7 @@
                             <constraint firstItem="7PF-NH-RRY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yTK-67-yOH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="EXr-HY-0l6"/>
+                    <navigationItem key="navigationItem" title="Apple Map" id="EXr-HY-0l6"/>
                     <connections>
                         <outlet property="mapView" destination="Bie-Ec-ldR" id="gGF-Ji-KJh"/>
                         <outlet property="searchBar" destination="7PF-NH-RRY" id="Mx2-gB-AqR"/>
@@ -45,12 +45,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713.04347826086962" y="93.75"/>
+            <point key="canvasLocation" x="1623.1884057971015" y="93.75"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Apple Map-->
         <scene sceneID="uYf-UL-aiT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fiY-Tu-YMo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Apple Map" id="S2a-Sc-Tl9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rke-JO-iLY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -63,7 +64,83 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEP-K5-8cU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197.10144927536234" y="93.75"/>
+            <point key="canvasLocation" x="713.04347826086962" y="93.75"/>
+        </scene>
+        <!--GMSViewController-->
+        <scene sceneID="gTc-Ht-E2U">
+            <objects>
+                <viewController storyboardIdentifier="GMSViewController" title="GMSViewController" id="IOz-tX-YhH" customClass="GMSViewController" customModule="Maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YCo-zz-Kry">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search here" translatesAutoresizingMaskIntoConstraints="NO" id="AxI-Yt-0ZZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2t5-pv-fPU">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NTO-x1-UHk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2t5-pv-fPU" firstAttribute="leading" secondItem="NTO-x1-UHk" secondAttribute="leading" id="0xb-4V-ulD"/>
+                            <constraint firstItem="2t5-pv-fPU" firstAttribute="top" secondItem="AxI-Yt-0ZZ" secondAttribute="bottom" id="E9j-eX-z86"/>
+                            <constraint firstItem="NTO-x1-UHk" firstAttribute="bottom" secondItem="2t5-pv-fPU" secondAttribute="bottom" id="GC8-13-37S"/>
+                            <constraint firstItem="NTO-x1-UHk" firstAttribute="trailing" secondItem="2t5-pv-fPU" secondAttribute="trailing" id="LTI-ei-mes"/>
+                            <constraint firstItem="AxI-Yt-0ZZ" firstAttribute="top" secondItem="NTO-x1-UHk" secondAttribute="top" id="X2E-fl-J2s"/>
+                            <constraint firstItem="AxI-Yt-0ZZ" firstAttribute="leading" secondItem="NTO-x1-UHk" secondAttribute="leading" id="dtO-7p-N8N"/>
+                            <constraint firstItem="AxI-Yt-0ZZ" firstAttribute="trailing" secondItem="NTO-x1-UHk" secondAttribute="trailing" id="yXF-Vm-nW5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Google Maps" id="Nxs-l0-0cT"/>
+                    <connections>
+                        <outlet property="googleMapView" destination="2t5-pv-fPU" id="GxH-PW-YY1"/>
+                        <outlet property="searchBar" destination="AxI-Yt-0ZZ" id="9cc-4b-dll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nP-rC-K8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621.7391304347827" y="817.63392857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="U14-fs-LkW">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gDC-Lz-37t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rw3-SH-fze">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fiY-Tu-YMo" kind="relationship" relationship="viewControllers" id="iYd-X3-KJK"/>
+                        <segue destination="7Pp-mS-0yg" kind="relationship" relationship="viewControllers" id="dpb-ue-mxV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbC-eX-gjp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="429"/>
+        </scene>
+        <!--Google Maps-->
+        <scene sceneID="Dmt-xW-mOz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Pp-mS-0yg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Google Maps" id="ghk-BW-awa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mPM-48-yBf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IOz-tX-YhH" kind="relationship" relationship="rootViewController" id="u8o-M7-NAh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1W-Po-Xbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711.59420289855075" y="817.63392857142856"/>
         </scene>
     </scenes>
     <resources>

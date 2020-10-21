@@ -5,6 +5,8 @@
 //  Created by Agil Madinali on 10/21/20.
 //
 
+import GoogleMaps
+import GooglePlaces
 import UIKit
 
 @UIApplicationMain
@@ -12,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        #warning("INSERT GOOGLE APIs HERE")
+        GMSServices.provideAPIKey("")
+        GMSPlacesClient.provideAPIKey("")
         return true
     }
 
